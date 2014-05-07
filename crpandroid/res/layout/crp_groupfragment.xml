@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center" 
+	    >
+	<Button
+        android:id="@+id/select_btn"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="center_horizontal"
+    	android:text = "SelectAll"
+    	android:visibility="gone"
+    />
+   <!-- 
+ 	  android:listSelector="@android:color/transparent"可以去掉点击时默认的黄色背景
+ 	  android:divider="@android:color/transparent"可以去掉默认的分割线
+ 	  这两个设置了后就可以换成自己的背景了。
+ 	-->
+    <com.sdhz.view.XListView
+        android:id="@id/xlist_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:dividerHeight="2dp"
+        android:cacheColorHint="#00000000" >
+    </com.sdhz.view.XListView>
+	</RelativeLayout>
+</LinearLayout>

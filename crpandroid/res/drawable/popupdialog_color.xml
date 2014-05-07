@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <shape android:shape="rectangle">
+        <gradient android:angle="0" android:endColor="#047DD3" android:startColor="#047DD3" />
+ <!-- 背景颜色渐变 -->
+        <stroke android:dashGap="2dp" android:dashWidth="2dp" android:width="2dp" android:color="#047DD3"></stroke>
+        <!-- 描边 -->
+        <corners android:bottomLeftRadius="5dp" android:bottomRightRadius="5dp" android:topLeftRadius="5dp" android:topRightRadius="5dp" />
+ <!-- 设置圆角 -->
+    </shape>
+
+</selector>

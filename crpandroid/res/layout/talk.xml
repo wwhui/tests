@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/talk_bg"
+    android:orientation="vertical" >
+    <include 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/crp_title_bar_send"
+        />
+    <!-- android:divider="@android:color/transparent"去掉默认的分隔线 
+    android:listSelector="@android:color/transparent"去掉选中时的默认效果
+    -->
+    <com.sdhz.view.XListView
+        android:id="@id/xlist_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="9"
+        android:divider="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:paddingLeft="10dip"
+        android:dividerHeight="2dp"
+        android:fadeScrollbars="true"
+        android:layout_marginBottom="10dp"
+        android:cacheColorHint="#00000000" >
+    </com.sdhz.view.XListView>
+    <include 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/popupwinow"
+        />
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_item_selector"
+    android:orientation="vertical"
+    android:padding="10dip"
+  >
+    <ImageView
+        android:id="@id/person_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/head" />
+
+    <TextView
+        android:id="@+id/reply_username"
+        style="@style/itemNameStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/person_image"
+        android:ellipsize="end"
+        android:lineSpacingExtra="3dp"
+        android:singleLine="true"
+        android:text="评论人姓名" />
+
+    <TextView
+        android:id="@+id/reply_content"
+        style="@style/itemContentStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/person_image"
+        android:text="评论内容"
+        />
+
+    <TextView
+        android:id="@+id/reply_time"
+        style="@style/DateStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="3dp"
+        android:text="2014-02-20" />
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    style="@style/itemBackground"
+    >
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_item_selector"
+    android:paddingBottom="7dp"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:paddingTop="7dp" >
+
+    <ImageView
+        android:id="@+id/person_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/head" />
+
+       <TextView
+        android:id="@+id/item_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="sdsdwwwwwwsd"
+        style="@style/itemNameStyle"
+  />
+    <TextView
+        android:id="@+id/main_person_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/person_image"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="sdsdsd"
+        style="@style/itemNameStyle"
+  />
+
+    <TextView
+        android:id="@+id/main_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="2dp"
+        android:gravity="bottom"
+        android:lineSpacingExtra="3dp"
+        style="@style/DateStyle" />
+    
+    <TextView
+        android:id="@+id/main_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_person_name"
+        style="@style/itemContentStyle"
+        />
+</RelativeLayout>
+</LinearLayout>

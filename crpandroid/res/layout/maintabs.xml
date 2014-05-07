@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabHost android:id="@android:id/tabhost" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <TabWidget android:id="@android:id/tabs" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0" />
+            <RadioGroup android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/main_radio" android:background="@drawable/maintab_toolbar_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RadioButton  android:id="@id/main_honme" android:layout_marginTop="2.0dip" android:text="@string/main_home"     android:drawableTop="@drawable/tabbar_menu_home" style="@style/main_tab_bottom" />
+                <RadioButton  android:id="@id/main_message_center" android:layout_marginTop="2.0dip" android:text="@string/main_message_center" android:drawableTop="@drawable/tabbar_menu_profile" style="@style/main_tab_bottom" />
+                <RadioButton  android:id="@id/main_profile" android:layout_marginTop="2.0dip" android:text="@string/main_profile" android:drawableTop="@drawable/tabbar_menu_me" style="@style/main_tab_bottom" />
+                <RadioButton  android:id="@id/main_discover" android:layout_marginTop="2.0dip" android:text="@string/main_discover" android:drawableTop="@drawable/tabbar_menu_discover" style="@style/main_tab_bottom" />
+                <RadioButton  android:id="@id/main_more" android:layout_marginTop="2.0dip" android:text="@string/main_more" android:drawableTop="@drawable/tabbar_menu_more" style="@style/main_tab_bottom" />
+            </RadioGroup>
+    </LinearLayout>
+</TabHost>

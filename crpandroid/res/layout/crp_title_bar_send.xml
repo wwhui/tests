@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/title_background" 
+    >
+
+    <!-- 左按钮 -->
+
+    <Button
+        android:id="@+id/left_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/button_title_color"
+        android:text="@string/cancel"
+         android:textSize="12sp"
+        android:textColor="@color/white" />
+    <!-- 中标题 -->
+
+    <TextView
+        android:id="@id/title_bar"
+        style="@style/BaseTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusableInTouchMode="true" 
+        android:singleLine="true"
+        android:gravity="center_vertical"
+        android:maxEms="6"
+        />
+
+    <!-- 右按钮 -->
+
+    <ProgressBar
+        android:id="@+id/progressBar_loading"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10.0dip"
+        android:layout_toLeftOf="@id/right_button"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@id/right_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+        android:background="@drawable/button_title_color"
+        android:text="@string/save"
+        android:textSize="12sp"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

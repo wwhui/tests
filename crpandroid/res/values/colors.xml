@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- title颜色 -->
+    <color name="message_list_item_date">#818181</color>
+    <color name="message_list_item_title">#026AD0</color>
+    <color name="message_list_item_title_pressed">#818181</color>
+    <color name="message_list_item_content">#2f2f2f</color>
+    <color name="message_list_item_commment">#818181</color>
+    <!-- 颜色的值 -->
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gray">#ffe0e0e0</color>
+    <color name="buleColor">#7bbfea</color>
+    <color name="gray1">#d3d7d4</color>
+    <color name="graySecond" >#EDEDED</color>
+    <color name="light_gray" >#F6F2F6</color>
+    <color name="blue_bg" >#B6CEE9</color>
+    <color name="blue" >#026AD0</color>
+    <color name="green" >#118408</color>
+    <color name="red" >#CC0802</color>
+    <color name="transparent" >#b0000000</color>
+
+</resources>

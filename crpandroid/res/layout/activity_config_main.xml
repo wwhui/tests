@@ -1,0 +1,161 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_background" >
+
+        <Button
+            android:id="@+id/leftBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:drawableLeft="@drawable/left_btn_back_list" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true" 
+            android:text="@string/main_more"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+        	android:textStyle="bold"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+<!--         <TextView
+            android:id="@id/push_conf"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:background="@drawable/bg_border_selector"
+            android:drawableRight="@drawable/right_back_ground"
+            android:gravity="left"
+            android:text="@string/push_conf"
+            android:textColor="@color/black"
+            android:textSize="20sp" /> -->
+		<LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:background="@drawable/shape_bg"
+            android:orientation="vertical" >
+           <TextView
+                android:id="@+id/person_detail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_border_selector"
+                android:drawableRight="@drawable/right_back_ground"
+                android:gravity="left"
+                android:text="@string/person_detail"
+                android:textColor="@color/black"
+                android:textSize="20sp" /> 
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:background="@drawable/shape_bg"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@id/check_version"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+               android:background="@drawable/bg_border_selector"
+                android:drawableRight="@drawable/right_back_ground"
+                android:gravity="left"
+                android:text="@string/check_version"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+            <View
+	            android:layout_width="fill_parent"
+	            android:layout_height="1.0px"
+	            android:background="@drawable/shape_line" />
+
+            <TextView
+                android:id="@id/password_conf"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_border_selector"
+                android:drawableRight="@drawable/right_back_ground"
+                android:gravity="left"
+                android:text="@string/password_conf"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+            <View
+	            android:layout_width="fill_parent"
+	            android:layout_height="1.0px"
+	            android:background="@drawable/shape_line" />
+
+            <TextView
+                android:id="@+id/clear"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_border_selector"
+                android:drawableRight="@drawable/right_back_ground"
+                android:gravity="left"
+                android:text="@string/clear_cache"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/admin_manager"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_border_selector"
+                android:drawableRight="@drawable/right_back_ground"
+                android:gravity="left"
+                android:text="@string/admin_manager"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:visibility="gone" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:background="@drawable/shape_bg"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/suggest"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_border_selector"
+                android:drawableRight="@drawable/right_back_ground"
+                android:gravity="left"
+                android:text="@string/suggest"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+			
+            <View
+	            android:layout_width="fill_parent"
+	            android:layout_height="1.0px"
+	            android:background="@drawable/shape_line" />
+            
+            <TextView
+                android:id="@id/about"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_border_selector"
+                android:drawableRight="@drawable/right_back_ground"
+                android:gravity="left"
+                android:text="@string/about"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

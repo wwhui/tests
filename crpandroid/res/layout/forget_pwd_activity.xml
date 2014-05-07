@@ -1,0 +1,160 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+	<include 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    layout="@layout/crp_title_bar_back"
+	    />
+	<!--  
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_background" >
+
+        <Button
+            android:id="@+id/leftBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_title_color"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:text="@string/forgetpwd"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+		<LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/shape_bg"
+		    android:orientation="vertical"
+		    >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="工号:" 
+                style="@style/tvStyle"
+                />
+
+            <EditText
+                android:id="@+id/accountEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入工号" 
+                style="@style/etStyle"
+                />
+        </LinearLayout>
+		<View
+	            android:layout_width="fill_parent"
+	            android:layout_height="1.0px"
+	            android:background="@drawable/shape_line" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="电话:" 
+                style="@style/tvStyle"
+                />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/phone"
+                android:inputType="phone" 
+                style="@style/etStyle"
+                />
+        </LinearLayout>
+		<View
+	            android:layout_width="fill_parent"
+	            android:layout_height="1.0px"
+	            android:background="@drawable/shape_line" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="验证码:" 
+                style="@style/tvStyle"
+                />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/sms_code"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:hint="@string/phone_verycode"
+                    android:inputType="number" 
+                    style="@style/etStyle"
+                    />
+
+                <Button
+                    android:id="@+id/smsBtn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/button_psw_color"
+                    android:gravity="center"
+                    android:text="获取验证码"
+                    android:textColor="@color/buleColor"
+                     />
+            </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/sendBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_color"
+            android:gravity="center"
+            android:text="下一步"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

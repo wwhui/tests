@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" 
+	    >
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_margin="5dip"
+		    android:orientation="horizontal"
+	        >
+		    <ImageView
+		        android:id="@id/person_image"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="left"
+		        android:src="@drawable/head" />
+			<LinearLayout 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+			    >
+		    <TextView
+		        android:id="@id/tv_projectname"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="群组名称"
+		        android:layout_marginLeft="5dip"
+		        android:textColor="@color/message_list_item_title"
+		        android:textSize="15sp"
+		        android:textStyle="bold" />
+		    <TextView
+		        android:id="@id/tv_groupintro"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="群组简介"
+		        android:layout_marginLeft="5dip"
+		        android:textColor="@color/message_list_item_title"
+		        android:textSize="12sp"
+		        android:textStyle="bold" />
+		    </LinearLayout>
+		</LinearLayout>
+	    <TextView
+	        android:id="@id/comment_title"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:focusable="true"
+	        android:gravity="left"
+	        android:text="个人简介"
+	        android:textColor="@color/message_list_item_content"
+	        android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

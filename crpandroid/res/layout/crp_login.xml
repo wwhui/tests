@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login_bgj"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="40dp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/looo" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dip"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@id/accountEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_content_color"
+                android:drawableLeft="@drawable/phone"
+                android:hint="@string/account_hint" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dip"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@id/passwordEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_content_color"
+                android:drawableLeft="@drawable/keyboard"
+                android:hint="@string/password_hint"
+                android:inputType="textPassword" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@id/rememberCheckBox"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="记住密码"
+                android:textColor="@color/buleColor" />
+
+            <Button
+                android:id="@id/forgetButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:background="@drawable/button_psw_color"
+                android:text="@string/forget_button_text"
+                android:textColor="@color/buleColor" />
+        </LinearLayout>
+
+        <Button
+            android:id="@id/loginButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38dip"
+            android:background="@drawable/button_color"
+            android:text="@string/login_button_text"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@id/versionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:text="版本号：v111"
+        android:textSize="10sp" />
+
+</LinearLayout>

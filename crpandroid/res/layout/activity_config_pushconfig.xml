@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="@color/white">
+	<include 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    layout="@layout/crp_title"
+	    />
+	<TextView
+	    android:id="@+id/pushMessageTextView"
+	    android:layout_width="fill_parent"
+	    android:layout_height="55dip"
+	    android:text="@string/push_conf"
+	    android:gravity="center_vertical"
+	    android:textSize="18sp"
+	    android:textColor="@color/black"
+	    android:paddingLeft="20dip"
+	    android:background="@drawable/bg_border_selector" />
+	
+	<TextView
+	    android:id="@+id/pushPhpVodTextView"
+	    android:layout_width="fill_parent"
+	    android:layout_height="55dip"
+	    android:text="@string/push_conf"
+	    android:gravity="center_vertical"
+	    android:textSize="18sp"
+	    android:textColor="@color/black"
+	    android:paddingLeft="20dip"
+	    android:background="@drawable/bg_border_selector" />
+	
+	<TextView
+	    android:id="@+id/pushWebCalTextView"
+	    android:layout_width="fill_parent"
+	    android:layout_height="55dip"
+	    android:text="@string/push_conf"
+	    android:gravity="center_vertical"
+	    android:textSize="18sp"
+	    android:textColor="@color/black"
+	    android:paddingLeft="20dip"
+	    android:background="@drawable/bg_border_selector" />
+
+	<TextView
+	    android:id="@id/pushSoundConfTextView"
+	    android:layout_width="fill_parent"
+	    android:layout_height="55dip"
+	    android:text="@string/push_conf"
+	    android:gravity="center_vertical"
+	    android:textSize="18sp"
+	    android:textColor="@color/black"
+	    android:paddingLeft="20dip"
+	    android:background="@drawable/bg_border_selector" />
+	
+	<TextView
+	    android:id="@id/pushShakeConfTextView"
+	    android:layout_width="fill_parent"
+	    android:layout_height="55dip"
+	    android:text="@string/push_conf"
+	    android:gravity="center_vertical"
+	    android:textSize="18sp"
+	    android:textColor="@color/black"
+	    android:paddingLeft="20dip"
+	    android:background="@drawable/bg_border_selector" />
+</LinearLayout>

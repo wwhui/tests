@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sdhz.crpandroid"
+    android:versionCode="2"
+    android:versionName="1.1" >
+
+
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="15" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" /> 
+    
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    
+    
+    
+    
+    <uses-feature android:name="android.hardware.camera" />
+	<uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+<supports-screens 
+    android:largeScreens="true"
+    android:normalScreens="true"
+    android:anyDensity="true"
+    android:smallScreens="true"
+    />
+    <application
+        android:allowBackup="true"
+        android:name="com.sdhz.crpandroid.CrpaApplication"
+        android:icon="@drawable/ic_launcher222"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.sdhz.crpandroid.LogoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sdhz.crpandroid.WelComeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sdhz.crpandroid.LoginActivity"
+            android:screenOrientation="portrait" 
+            />
+        <!-- -忘记密码 -->
+           <activity
+            android:name="com.sdhz.crpandroid.ForgetPwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sdhz.crpandroid.MainTabActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.sdhz.crpandroid.task.TaskMainListView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sdhz.crpandroid.task.TaskMyListView"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.sdhz.crpandroid.task.CreateNewComentActivity"
+            android:configChanges="orientation|keyboardHidden" 
+            android:screenOrientation="nosensor"
+             />
+        <activity
+            android:name="com.sdhz.crpandroid.task.PointMainListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sdhz.crpandroid.task.CommentListViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sdhz.crpandroid.task.CommentDetailViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sdhz.crpandroid.group.ExpandablePersonListViewCheckbox"
+            android:screenOrientation="portrait" />
+        <!-- 群组聊天 -->
+        <activity
+            android:name="com.sdhz.crpandroid.group.TalkActivity"
+            android:screenOrientation="portrait" />
+        <!-- 群组成员 -->
+        <activity
+            android:name="com.sdhz.crpandroid.group.GroupMemberActivity"
+            android:screenOrientation="portrait" />
+        <!-- 群组 -->
+              <activity
+            android:name="com.sdhz.crpandroid.group.SelectUserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sdhz.crpandroid.group.AddActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sdhz.crpandroid.group.GroupActivity"
+            android:screenOrientation="portrait" />
+        <!-- 广场 -->
+        <activity
+            android:name="com.sdhz.crpandroid.person.PersonMainActivity"
+            android:screenOrientation="portrait" />
+        <!-- 关注 -->
+        <activity
+            android:name="com.sdhz.crpandroid.person.AttentionActivity"
+            android:screenOrientation="portrait" />
+		<!-- 意见反馈 start -->
+		<activity
+            android:name="com.sdhz.crpandroid.config.SuggestActivity"
+            android:screenOrientation="portrait" />
+		<!-- 意见反馈 end -->
+        <!-- 个人介绍模块 start -->
+        <activity
+            android:name="com.sdhz.crpandroid.person.PersonIntroduceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sdhz.crpandroid.person.PersonInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sdhz.crpandroid.person.PersonPswActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sdhz.crpandroid.config.ConfigMainActivity"
+            android:screenOrientation="portrait" />
+		<!-- 博文列表 -->
+		<activity android:name="com.sdhz.crpandroid.blog.MainBlogListActivity"
+		      android:screenOrientation="portrait"/>
+		
+        <!-- 个人介绍模块 end -->
+        <!-- 搜索模块 start -->
+        <activity
+            android:name="com.sdhz.crpandroid.search.SearchMainActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 搜索模块 end -->
+        <!-- 推送 start -->
+        <activity
+            android:name="com.sdhz.crpandroid.config.PushConfigActivity"
+            android:screenOrientation="portrait" />
+		<!-- 推送service start -->
+<!-- 	<service android:name="com.sdhz.crpandroid.message.MessageService" />
+		<receiver android:name="com.sdhz.crpandroid.message.BootServiceReceiver" android:exported="false">
+		    <intent-filter>
+		        <action android:name="android.intent.action.BOOT_COMPLETED" />
+		    </intent-filter>
+		</receiver>  -->
+		<!-- 推送service end -->
+		
+		     <!-- push应用定义消息receiver声明 -->
+        <receiver android:name="com.sdhz.crpandroid.PushServicer">
+            <intent-filter>
+                <!-- 接收push消息 -->
+                <action android:name="com.baidu.android.pushservice.action.MESSAGE" />
+                <!-- 接收bind,unbind,fetch,delete等反馈消息 -->
+                <action android:name="com.baidu.android.pushservice.action.RECEIVE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.CLICK" />
+            </intent-filter>
+        </receiver>
+        
+        <!-- push必须的receviver和service声明 -->
+        <receiver android:name="com.baidu.android.pushservice.PushServiceReceiver"
+            android:process=":bdservice_v1">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.SHOW" />
+                <action android:name="com.baidu.android.pushservice.action.media.CLICK" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.baidu.android.pushservice.RegistrationReceiver"
+            android:process=":bdservice_v1">
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.METHOD" />
+                <action android:name="com.baidu.android.pushservice.action.BIND_SYNC" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package" />
+            </intent-filter>                   
+        </receiver>
+        <service
+            android:name="com.baidu.android.pushservice.PushService"
+            android:exported="true"
+            android:process=":bdservice_v1" />
+        		<!-- 在百度开发者中心查询应用的API Key -->
+        <meta-data android:name="api_key" android:value="WYP01COxOjHllr5E9sWbaUL8" />
+    </application>
+</manifest>

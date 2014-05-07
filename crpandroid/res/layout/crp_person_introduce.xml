@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+    <!--android:background="#E8F2FE"  -->
+     <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_background" >
+		<Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:drawableLeft="@drawable/left_btn_back_list" />
+	     <TextView 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text="个人信息"
+	        android:textSize="20sp"
+	        android:textColor="@color/white"
+	        android:layout_centerVertical="true"
+	        android:textStyle="bold"
+	        android:layout_marginTop="5dip"
+	        />
+
+    </RelativeLayout>
+
+	<!-- top start -->
+	<LinearLayout 
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#fff"
+        
+        android:orientation="vertical"
+	    >
+	    
+	    
+	
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal" >
+	        <!-- 左边个人头像start -->
+        <ImageView
+            android:id="@+id/person_al"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="30dip"
+            android:layout_marginTop="50dip"
+            android:background="@drawable/alvate"
+            />
+        	<!-- 左边个人头像end -->
+        <!-- 右边个人介绍start -->
+        <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="30dip"
+            android:layout_marginTop="50dip"
+	        android:orientation="vertical" >
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="5dip"
+		        android:orientation="horizontal" >
+		        <TextView
+		            android:id="@+id/person_name"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textStyle="bold"
+		            android:textColor="#000"
+		            android:text="姓名：" />
+		
+		        <TextView
+		            android:id="@+id/person_name_obtain"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:textColor="#000"
+		            android:text="武钢" />
+	        </LinearLayout>
+	        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="5dip"
+		        android:orientation="horizontal" >
+		        <TextView
+		            android:id="@+id/person_unit"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textStyle="bold"
+		            android:textColor="#000"
+		            android:text="单位：" />
+		        <TextView
+		            android:id="@+id/person_unit_obtain"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:textColor="#000"
+		            android:text="移动" />
+	         </LinearLayout>
+	         <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="5dip"
+		        android:orientation="horizontal" >
+		        <TextView
+		            android:id="@+id/person_job"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textStyle="bold"
+		            android:textColor="#000"
+		            android:text="职务：" />
+		
+		        <TextView
+		            android:id="@+id/person_job_obtain"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:textColor="#000"
+		            android:text="工程部" />
+	        </LinearLayout>
+        </LinearLayout>
+        <!-- 右边个人介绍end -->
+		</LinearLayout>
+		<!-- nav导航条 start -->
+		<LinearLayout
+		     android:layout_width="match_parent"
+	         android:layout_height="wrap_content"
+	         android:orientation="horizontal" 
+	         android:layout_marginTop="20dip"
+		     >
+	         <TextView
+                android:id="@id/check_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_border_selector"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="微博"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+	         <TextView
+                android:id="@id/check_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_border_selector"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="关注"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+	         <TextView
+                android:id="@id/check_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_border_selector"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="粉丝"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+	         <TextView
+                android:id="@id/check_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_border_selector"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="赞"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+	         <TextView
+                android:id="@id/check_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_border_selector"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="更多"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+	     </LinearLayout>
+	     <!-- nav导航条 end -->
+	</LinearLayout>
+	<!-- top end -->
+	<!-- middle start -->
+	<LinearLayout
+	     android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_weight="2"
+         android:orientation="vertical" 
+         android:gravity="top"
+	     >
+        
+		
+		<TextView
+                android:id="@id/check_version"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_border_selector"
+                android:drawableRight="@drawable/right_back_ground"
+                android:gravity="left"
+                android:text="我的好友"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+		<TextView
+                android:id="@+id/detail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_border_selector"
+                android:drawableRight="@drawable/right_back_ground"
+                android:gravity="left"
+                android:text="详细资料"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+	</LinearLayout>
+	<!-- middle end -->
+    <!-- bottom start -->
+    <LinearLayout
+	     android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:orientation="vertical" 
+	     >
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	         <TextView 
+	             android:layout_width="fill_parent"
+	             android:layout_height="wrap_content"
+	             />
+        </LinearLayout>
+	</LinearLayout>
+    <!-- bottom end -->
+
+</LinearLayout>

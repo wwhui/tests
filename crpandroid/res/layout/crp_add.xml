@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+   <include 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       layout="@layout/crp_title"
+       />
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dip"
+        android:text="@string/keyword"
+        android:textSize="12sp"
+        android:background="@color/blue_bg"
+        />
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_bg"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/etdiscover"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:background="@drawable/edittext_reply_color"
+            android:drawableLeft="@drawable/search"
+            android:layout_weight="1"
+            android:hint="请输入关键词" />
+
+        <Button
+            android:id="@+id/searchbtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:background="@drawable/button_color"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:textColor="@color/white"
+            android:text="@string/main_discover" />
+    </LinearLayout>
+	<com.sdhz.view.XListView
+        android:id="@+id/addlist_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:dividerHeight="2dp"
+        android:cacheColorHint="#00000000" >
+    </com.sdhz.view.XListView>
+
+</LinearLayout>

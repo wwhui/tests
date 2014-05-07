@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    style="@style/listviewBackground"
+    >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/crp_title_bar_back" />
+
+    <ListView
+        android:id="@id/xlist_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/xlistview"
+        >
+    </ListView>
+
+</LinearLayout>

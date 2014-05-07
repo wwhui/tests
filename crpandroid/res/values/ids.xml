@@ -1,0 +1,100 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item name="main_radio" type="id">false</item>
+    <item name="main_honme" type="id">false</item>
+    <item name="main_message_center" type="id">false</item>
+    <item name="main_profile" type="id">false</item>
+    <item name="main_discover" type="id">false</item>
+    <item name="main_more" type="id">false</item>
+
+    <!-- title_bar -->
+    <item name="left_button" type="id">false</item>
+    <item name="title_bar" type="id">false</item>
+    <item name="right_button" type="id">false</item>
+
+    <!-- -comment_list_view  所有的list用这一个ID -->
+      <item name="xlist_view" type="id">false</item>
+    
+    <!-- 发起一个主题时 -->
+    <!-- 主题名称 -->
+    <item name="comment_title" type="id">false</item>
+    <!-- 关联的 主题 -->
+    <item name="comment_about_subject" type="id">false</item>
+    
+    <!-- 头像ID -->
+  <item name="person_image" type="id">false</item>
+  	<!-- 主题发起人 -->
+  	<item name="comment_person" type="id">false</item>
+    <item name="comment_create_time" type="id">false</item>
+    
+   <item name="content" type="id">false</item>
+    
+    <!-- 评论 -->
+     <item name="btn_comment" type="id">false</item>
+    <item name="btn_redirect" type="id">false</item>
+    <!-- 关注 -->
+     <item name="btn_attention" type="id">false</item>
+      <item name="btn_at" type="id">false</item>
+     <!-- -评论及回复时 -->
+     <!-- 我发起的流程 -->
+     <item name="tv_projectname" type="id">false</item>
+     <item name="tv_groupintro" type="id">false</item>
+<!-- Main -->
+    <item name="versionText" type="id">false</item>
+    <item name="accountEditText" type="id">false</item>
+    <item name="passwordEditText" type="id">false</item>
+    <item name="rememberCheckBox" type="id">false</item>
+    <item name="forgetButton" type="id">false</item>
+    <item name="loginButton" type="id">false</item>
+    <item name="progressBar1" type="id">false</item>
+    <item name="progressBar2" type="id">false</item>
+    <item name="loginTextView" type="id">false</item>
+
+    <!-- 标题栏文本内容 -->
+    <item name="public_title_left_layout" type="id">false</item>
+    <item name="public_title_right_layout" type="id">false</item>
+    <item name="public_title_center_layout" type="id">false</item>
+
+    <!-- Category -->
+    <item name="messageCate" type="id"></item>
+    <item name="webcalCate" type="id"></item>
+    <item name="phpvodCate" type="id"></item>
+    <item name="progressBar3" type="id"></item>
+    <item name="loadingTextView" type="id"></item>
+
+    <!-- 修改密码 -->
+    <item name="accountTextView" type="id"></item>
+    <item name="oldpassword" type="id"></item>
+    <item name="newpassword" type="id"></item>
+    <item name="repassword" type="id"></item>
+    <item name="mod_password_button" type="id"></item>
+
+    <!-- 设置 -->
+    <item name="push_conf" type="id">false</item>
+    <item name="check_version" type="id">false</item>
+    <item name="password_conf" type="id">false</item>
+    <item name="about" type="id">false</item>
+    <item name="pushConfTextView" type="id">false</item>
+    <item name="pushSoundConfTextView" type="id">false</item>
+    <item name="pushShakeConfTextView" type="id">false</item>
+    <item name="save" type="id">false</item>
+
+    <!-- WebcalMain -->
+    <item name="personalDayCate" type="id"></item>
+    <item name="personalWeekCate" type="id"></item>
+    <item name="draftCate" type="id"></item>
+    <item name="teamDayCate" type="id"></item>
+    <item name="front" type="id"></item>
+    <item name="personalDayCurrentDay" type="id"></item>
+    <item name="personalWeekCurrentDay" type="id"></item>
+    <item name="teamDayCurrentDay" type="id"></item>
+    <item name="behind" type="id"></item>
+
+    <!-- PhpvodTable -->
+    <item name="guideGallery" type="id"></item>
+
+    <!-- PhpvodPartlist -->
+    <item name="listView1" type="id"></item>
+    <item name="nullListView" type="id"></item>
+
+</resources>

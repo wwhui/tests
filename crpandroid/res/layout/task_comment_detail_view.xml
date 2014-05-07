@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_main"
+    style="@style/listviewBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+        <LinearLayout
+            android:id="@+id/layout_1"
+            style="@style/itemBackground"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/crp_title_bar_back" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/back"
+                android:background="@drawable/list_item_selector"
+                android:padding="10dip" >
+
+                <ImageView
+                    android:id="@+id/person_name_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/head" />
+
+                <TextView
+                    android:id="@+id/person_name"
+                    style="@style/itemNameStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@id/person_name_image"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="姓名" />
+
+                <TextView
+                    android:id="@+id/send_time"
+                    style="@style/DateStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="3dp"
+                    android:text="2014-02-20" />
+
+                <TextView
+                    android:id="@id/content"
+                    style="@style/itemContentStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/person_name_image"
+                    android:text="春眠不觉晓，处处闻啼鸟" />
+
+                <ImageView
+                    android:id="@+id/imageview"
+                    android:layout_below="@id/content"
+                    style="@style/ImageviewStyle"
+                    />
+
+                <TextView
+                    android:id="@+id/comment"
+                    style="@style/itemCommentStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/imageview"
+                    android:background="@drawable/item_button_color"
+                    android:text="评论" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <com.sdhz.view.XListView
+            android:id="@id/xlist_view"
+            style="@style/xlistview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </com.sdhz.view.XListView>
+
+</LinearLayout>

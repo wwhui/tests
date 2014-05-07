@@ -1,0 +1,210 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="main_tab_bottom">
+        <item name="android:textSize">@dimen/bottom_tab_font_size</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@drawable/home_btn_bg</item>
+        <item name="android:paddingTop">@dimen/bottom_tab_padding_up</item>
+        <item name="android:paddingBottom">2.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">2.0dip</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">@dimen/bottom_tab_padding_drawable</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="BaseTitle">
+        <item name="android:textSize">@dimen/home_title_textsize</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="WindowTitleBackground">
+        <item name="android:background">@drawable/title_background</item>
+    </style>
+
+    <style name="DialogAbout" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/dialog_bg</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <!-- 发起人的样式 -->
+    <style name="itemNameStyle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/message_list_item_title</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
+    <!-- 工单内容的流程类型样式 -->
+    <style name="flowNameStyle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+    <!-- 工单内容的样式 -->
+    <style name="itemContentStyle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/message_list_item_content</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <!-- 日期的样式 -->
+    <style name="DateStyle">
+        <item name="android:textColor">@color/message_list_item_date</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+    <!-- 发起人的样式 -->
+    <style name="itemCommentNameStyle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/message_list_item_title</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+            <!-- 工单评论样式 -->
+    <style name="itemCommentStyle">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/message_list_item_commment</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+    <!-- listview之item样式 -->
+    <style name="itemBackground">
+        <item name="android:background">@color/buleColor</item>
+        <item name="android:padding">2dip</item>
+    </style>
+    <!-- listview之bg样式 -->
+    <style name="listviewBackground">
+        <item name="android:background">@color/white</item>
+    </style>
+    <!-- xlistview之样式 -->
+    <style name="xlistview">
+        <item name="android:padding">5dip</item>
+        <item name="android:dividerHeight">2dip</item>
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:cacheColorHint">#00000000</item>
+    </style>
+    <!-- childlistview之bg样式 -->
+    <style name="childlistviewBackground">
+        <item name="android:layout_marginLeft">100dip</item>
+        <item name="android:layout_marginRight">10dip</item>
+        <item name="android:background">@color/light_gray</item>
+    </style>
+    <!-- childlistview之样式 -->
+    <style name="childlistview">
+        <item name="android:background">@color/white</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:padding">1dip</item>
+    </style>
+     <!-- childlistview工单评论样式 -->
+    <style name="childCommentStyle">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <!-- popupdialog 加载数据样式 -->
+    <style name="popupDialogStyle">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:padding">5dip</item>
+        <item name="android:background">@color/green</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- popupdialog 加载数据失败样式 -->
+    <style name="popupDialogFailStyle">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:padding">5dip</item>
+        <item name="android:background">@color/red</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- titlebar之走马灯样式 -->
+    <style name="zmdStyle">
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:maxEms">6</item>
+    </style>
+    <!-- 群成员之item样式 -->
+    <style name="gmItemStyle"> 
+        <item name="android:layout_marginLeft">5dip</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <!-- 登陆时显示dialog友好提示 -->
+   	<style name="loginDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item><!--背景透明-->
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">true</item><!--半透明-->
+        <item name="android:windowContentOverlay">@null</item><!--内容覆盖 -->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item><!-- 窗口样式Dialog -->
+        <item name="android:backgroundDimEnabled">true</item><!--模糊-->     
+　　</style>
+
+ <!-- dialog 的样式 -->
+   <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+		<item name="android:windowFrame">@null</item>
+    	<item name="android:windowIsFloating">true</item>
+    	<item name="android:windowContentOverlay">@null</item>
+    	<item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    	<item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+	</style>
+	<style name="CustomProgressDialog" parent="@style/CustomDialog">
+		<item name="android:windowBackground">@android:color/transparent</item>
+    	<item name="android:windowNoTitle">true</item>
+	</style>
+	<!-- 显示图片缩略样式 -->
+	<style name="ImageviewStyle" >
+		<item name="android:layout_width">120dp</item>
+    	<item name="android:layout_height">120dp</item>
+    	<item name="android:scaleType">centerInside</item>
+    	<item name="android:visibility">invisible</item>
+    	<item name="android:layout_marginTop">5dp</item>
+    	<item name="android:gravity">left</item>
+	</style>
+	<!-- 忘记密码之tv样式 -->
+	<style name="tvStyle" >
+		<item name="android:layout_weight">5</item>
+    	<item name="android:gravity">center</item>
+	</style>
+	<!-- 忘记密码之et样式 -->
+	<style name="etStyle" >
+		<item name="android:layout_weight">1</item>
+    	<item name="android:gravity">left</item>
+    	<item name="android:background">@drawable/edittext_forgetpwd_color</item>
+    	<item name="android:drawableLeft">@drawable/keyboard</item>
+	</style>
+	<!-- 聊天界面之时间tv样式 -->
+	<style name="sendTimeStyle" >
+		<item name="android:background">#bfbfbf</item>
+    	<item name="android:padding">2dp</item>
+    	<item name="android:textColor">@color/white</item>
+    	<item name="android:textSize">12sp</item>
+	</style>
+</resources>

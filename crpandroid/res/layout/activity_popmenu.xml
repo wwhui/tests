@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_view_cont"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popmenu_bg"
+    android:orientation="vertical"
+    android:paddingBottom="8.0dip"
+    android:paddingLeft="18.0dip"
+    android:paddingRight="18.0dip"
+    android:paddingTop="16.0dip" >
+
+    <TextView
+        android:id="@+id/popmenu_item_refresh"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_pop_item"
+        android:clickable="true"
+        android:drawablePadding="3.0dip"
+        android:gravity="center_vertical"
+        android:padding="7.0dip"
+        android:text="@string/bloglist"
+        android:textColor="#FFFFFF"
+        android:textSize="18.0sp" />
+
+</LinearLayout>
